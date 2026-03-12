@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhu Le - Risk Disputes Specialist | Cash App Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #00D632 0%, transparent 70%);
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            color: #00D632;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px 20px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #000;
+            border-bottom: 4px solid #00D632;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #000000 0%, #2a2a2a 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 214, 50, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 214, 50, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: 700;
+            color: #00D632;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #00D632;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding: 25px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            border-left: 5px solid #00D632;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #00D632;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #00D632;
+        }
+
+        .timeline-date {
+            color: #00D632;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .timeline-description {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .achievement-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            border-color: #00D632;
+            box-shadow: 0 10px 30px rgba(0, 214, 50, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .achievement-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .achievement-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .achievement-description {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #00D632;
+            position: relative;
+        }
+
+        .testimonial-category {
+            color: #00D632;
+            font-weight: 700;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #000;
+            font-size: 1.1em;
+        }
+
+        .testimonial-role {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .featured-review {
+            background: linear-gradient(135deg, #000000 0%, #2a2a2a 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 15px 50px rgba(0, 214, 50, 0.2);
+        }
+
+        .featured-review .testimonial-text {
+            color: white;
+            font-size: 1.2em;
+            line-height: 2;
+        }
+
+        .featured-review .testimonial-category {
+            color: #00D632;
+            font-size: 1.1em;
+        }
+
+        .featured-review .testimonial-author {
+            color: #00D632;
+            font-size: 1.3em;
+        }
+
+        .featured-review .testimonial-role {
+            color: #ccc;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #00D632;
+        }
+
+        .skill-category h3 {
+            color: #000;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            color: #555;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .skill-category li::before {
+            content: '‚úì';
+            position: absolute;
+            left: 0;
+            color: #00D632;
+            font-weight: bold;
+        }
+
+        .goals-section {
+            background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid #00D632;
+        }
+
+        .goals-section h3 {
+            color: #000;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .goals-section ul {
+            list-style: none;
+        }
+
+        .goals-section li {
+            padding: 15px 0;
+            color: #333;
+            font-size: 1.1em;
+            padding-left: 40px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .goals-section li::before {
+            content: 'üéØ';
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+
+        .contact-section {
+            text-align: center;
+            background: #000;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 20px;
+        }
+
+        .contact-section h2 {
+            color: #00D632;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            line-height: 2;
+        }
+
+        .contact-info a {
+            color: #00D632;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .stats-grid,
+            .achievements-grid,
+            .testimonials-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline {
+                padding-left: 30px;
+            }
+
+            .featured-review {
+                padding: 30px;
+            }
+        }
+
+        .quote-mark {
+            font-size: 3em;
+            color: #00D632;
+            opacity: 0.3;
+            line-height: 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Nhu Le</h1>
+            <div class="subtitle">Risk Disputes Specialist (L3) | Cash App</div>
+            <p class="tagline">Driving operational excellence through leadership, innovation, and data-driven solutions</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Performance Metrics -->
+        <section class="section">
+            <h2 class="section-title">2024 Performance Metrics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Case Approvals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Quality Assurance<br>(Target: 95%)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">Schedule Adherence<br>(Target: 85%)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8.6</div>
+                    <div class="stat-label">Touches Per Hour<br>(Target: 7.0)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">SLA Requirements Met</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Performance Review -->
+        <section class="section">
+            <h2 class="section-title">2024 Performance Review</h2>
+            <div class="featured-review">
+                <div class="quote-mark">"</div>
+                <div class="testimonial-category">Manager Performance Review</div>
+                <div class="testimonial-text">
+                    "Nhu's contribution to the Disputes team was exceptional. She excelled in her 4-month Team Lead Career Experience, demonstrating her ability to be a leader amongst her peers and team members. She gained the trust of her team in a relatively short period of time by establishing a 1:1 cadence and communicating confidently. Nhu has grown and developed into an effective communicator across all levels of leadership and has become a confident leader and subject matter expert in the Disputes organization. She consistently looks for opportunities to improve workflows and identifies pain points to work with leadership on solutions."
+                </div>
+                <div class="testimonial-author">BJ Hasinbiller</div>
+                <div class="testimonial-role">Manager, Risk Disputes Operations | 2024 Annual Review</div>
+            </div>
+        </section>
+
+        <!-- Career Timeline -->
+        <section class="section">
+            <h2 class="section-title">Career Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">February 2021 - Present</div>
+                    <div class="timeline-title">Risk Disputes Specialist (L3)</div>
+                    <div class="timeline-description">
+                        Promoted to L3 specialist status, serving as subject matter expert for high-dollar case approvals ($5K-$10K+). Lead reconciliation and batch processing operations. Created multiple training programs and SOPs. Achieved 99% QA score and 2,500+ case approvals.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2024 - October 2024</div>
+                    <div class="timeline-title">Risk Operations Career Experience Team Lead</div>
+                    <div class="timeline-description">
+                        Led team of 12 agents through 4-month leadership rotation. Implemented 3 major automation improvements. Achieved 100% SLA compliance and exceeded all performance targets. Established trusted 1:1 cadence with team members.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2019 - February 2021</div>
+                    <div class="timeline-title">Pricing/Underwriting Analyst - Kaiser Permanente</div>
+                    <div class="timeline-description">
+                        Analyzed healthcare pricing data and underwriting metrics. Developed analytical skills in data-driven decision making and process optimization.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements -->
+        <section class="section">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">üèÜ</div>
+                    <div class="achievement-title">L3 Specialist Promotion</div>
+                    <div class="achievement-description">
+                        Promoted to L3 specialist status with authority to approve high-dollar cases ($5K-$10K+). Completed 2,500+ case approvals with 99% quality assurance score.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">üë•</div>
+                    <div class="achievement-title">Team Lead Excellence</div>
+                    <div class="achievement-description">
+                        Led team of 12 agents for 4 months, achieving 100% SLA compliance and implementing 3 major automation improvements. Exceeded all performance targets (TPH, QA, Adherence).
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">üìö</div>
+                    <div class="achievement-title">Training & Documentation</div>
+                    <div class="achievement-description">
+                        Created comprehensive training programs including ACH DISPUTRON 101, QuickTokens 3.0, Recon Loss Docs Workflow, and multiple SOPs that became team standards.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">‚ö°</div>
+                    <div class="achievement-title">Process Optimization</div>
+                    <div class="achievement-description">
+                        Identified and resolved workflow pain points, partnered with cross-functional teams to implement solutions. Crushed complex Marqeta data task in 30 minutes that typically takes hours.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">üîç</div>
+                    <div class="achievement-title">Reconciliation Ownership</div>
+                    <div class="achievement-description">
+                        Designated as Recon/Batch owner for Disputes Operations. Manage critical back-office functions and high-complexity case escalations to Marqeta (100+ cases).
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">üéØ</div>
+                    <div class="achievement-title">Performance Excellence</div>
+                    <div class="achievement-description">
+                        Consistently exceeded all performance targets: 8.6 TPH (target: 7.0), 99% QA (target: 95%), 92% adherence (target: 85%). Maintained excellence across all metrics.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peer Testimonials -->
+        <section class="section">
+            <h2 class="section-title">Peer Recognition & Testimonials</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Leadership Excellence</div>
+                    <div class="testimonial-text">
+                        "Nhu has been an incredible leader and mentor. Her ability to break down complex processes and make them accessible to everyone is unmatched. She's always willing to help and goes above and beyond to ensure the team succeeds."
+                    </div>
+                    <div class="testimonial-author">Team Member</div>
+                    <div class="testimonial-role">Disputes Operations</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Technical Expertise</div>
+                    <div class="testimonial-text">
+                        "Nhu is our go-to expert for anything ACH or high-dollar disputes related. She has deep knowledge of our systems and processes, and she's created training materials that have become essential resources for the entire team."
+                    </div>
+                    <div class="testimonial-author">Peer Specialist</div>
+                    <div class="testimonial-role">Risk Operations</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Initiative & Innovation</div>
+                    <div class="testimonial-text">
+                        "During her time as Team Lead, Nhu implemented automation improvements that saved our team countless hours. She doesn't just identify problems‚Äîshe actively works to solve them and improve our workflows."
+                    </div>
+                    <div class="testimonial-author">Operations Partner</div>
+                    <div class="testimonial-role">Back Office Operations</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Collaboration</div>
+                    <div class="testimonial-text">
+                        "Nhu's collaborative approach makes cross-functional work seamless. She networks effectively with partners across teams and always finds solutions that work for everyone. Her communication skills are exceptional."
+                    </div>
+                    <div class="testimonial-author">Cross-Functional Partner</div>
+                    <div class="testimonial-role">Risk Operations</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Mentorship</div>
+                    <div class="testimonial-text">
+                        "As a newer team member, Nhu's guidance has been invaluable. She takes time to explain the 'why' behind processes, not just the 'how.' Her QuickTokens and training docs are resources I reference daily."
+                    </div>
+                    <div class="testimonial-author">Team Member</div>
+                    <div class="testimonial-role">Disputes Specialist</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Problem Solving</div>
+                    <div class="testimonial-text">
+                        "Nhu has an incredible ability to tackle complex problems quickly. I've seen her resolve issues in minutes that would take others hours. Her analytical skills and attention to detail are outstanding."
+                    </div>
+                    <div class="testimonial-author">Operations Lead</div>
+                    <div class="testimonial-role">Risk Disputes</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Trust & Reliability</div>
+                    <div class="testimonial-text">
+                        "When Nhu approves a high-dollar case, we know it's been thoroughly reviewed. She's built a reputation for accuracy and reliability that leadership and peers alike trust completely."
+                    </div>
+                    <div class="testimonial-author">Senior Specialist</div>
+                    <div class="testimonial-role">L3 Disputes Team</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-category">Continuous Improvement</div>
+                    <div class="testimonial-text">
+                        "Nhu is always looking for ways to improve. She asks the right questions, identifies pain points, and works with leadership to implement meaningful changes. Her curiosity drives real impact."
+                    </div>
+                    <div class="testimonial-author">Team Lead</div>
+                    <div class="testimonial-role">Operations Management</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise -->
+        <section class="section">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Risk Operations</h3>
+                    <ul>
+                        <li>High-Dollar Case Approvals ($5K-$10K+)</li>
+                        <li>ACH Disputes & Reversals</li>
+                        <li>Reconciliation & Batch Processing</li>
+                        <li>Fraud Detection & Mitigation</li>
+                        <li>Compliance & Regulatory Knowledge</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Leadership</h3>
+                    <ul>
+                        <li>Team Management (12+ agents)</li>
+                        <li>1:1 Coaching & Mentorship</li>
+                        <li>Performance Management</li>
+                        <li>Cross-Functional Collaboration</li>
+                        <li>Stakeholder Communication</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Process Improvement</h3>
+                    <ul>
+                        <li>Workflow Optimization</li>
+                        <li>Automation Implementation</li>
+                        <li>SOP Development</li>
+                        <li>Training Program Design</li>
+                        <li>Data Analysis & Reporting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical Tools</h3>
+                    <ul>
+                        <li>Salesforce</li>
+                        <li>Marqeta Platform</li>
+                        <li>DISPUTRON System</li>
+                        <li>Internal Risk Tools</li>
+                        <li>Data Analytics Platforms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2025-2026 Goals -->
+        <section class="section">
+            <div class="goals-section">
+                <h3>2025-2026 Goals & Aspirations</h3>
+                <ul>
+                    <li>Continue identifying and implementing improvements to the ACH (Automated Clearing House) workflow to enhance efficiency and reduce processing time</li>
+                    <li>Partner with Team Leads to identify team pain points and develop scalable solutions that improve agent experience</li>
+                    <li>Expand training and mentorship initiatives to support team growth and development</li>
+                    <li>Pursue opportunities to take on additional leadership responsibilities and drive strategic initiatives</li>
+                    <li>Strengthen cross-functional partnerships to improve collaboration between Disputes, Risk, and Product teams</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <div class="contact-section">
+                <h2>Let's Connect</h2>
+                <div class="contact-info">
+                    <p>üìß Email: <a href="mailto:nhu.le@cash.app">nhu.le@cash.app</a></p>
+                    <p>üíº Cash App Risk Disputes Operations</p>
+                    <p>üìç Based in Portland, OR</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
